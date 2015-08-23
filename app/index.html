@@ -25,6 +25,8 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
+    <script src="scripts/full-page.js"></script>
+
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -80,24 +82,6 @@
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-
-    <!-- FULL PAGE -->
-    <script>
-
-      $(document).ready(function() {
-
-        var resetDimensions = function() {
-          var winHeight = $(window).height(),
-              winWidth  = $(window).width();
-          $('#background').css('height', winHeight).css('width', winWidth);
-        }
-
-        resetDimensions();
-        $(window).on('resize', resetDimensions);
-
-      });
-
     </script>
 
     <!-- build:js scripts/vendor.js -->
